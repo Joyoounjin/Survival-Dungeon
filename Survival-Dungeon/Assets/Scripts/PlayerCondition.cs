@@ -24,6 +24,7 @@ public class PlayerCondition : MonoBehaviour, IDamagable
 
         if (hunger.curValue < 0.0f)
         {
+            // 작동하지 않습니다. 
             health.Subtract(noHungerHealthDecay * Time.deltaTime);
         }
 
