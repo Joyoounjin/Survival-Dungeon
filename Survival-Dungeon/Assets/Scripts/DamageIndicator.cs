@@ -16,14 +16,14 @@ public class DamageIndicator : MonoBehaviour
 
     public void Flash()
     {
-        //if (coroutine != null)
-        //{
-        //    StopCoroutine(coroutine);
-        //}
+        if (coroutine != null)
+        {
+            StopCoroutine(coroutine);
+        }
 
-        //image.enabled = true;
-        //image.color = new Color(1f, 105f / 255f, 105f / 255f);
-        //coroutine = StartCoroutine(FadeAway());
+        image.enabled = true;
+        image.color = new Color(1f, 105f / 255f, 105f / 255f);
+        coroutine = StartCoroutine(FadeAway());
     }
 
     private IEnumerator FadeAway()
